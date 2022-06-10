@@ -1,0 +1,21 @@
+.access {
+    padding: 6rem 1rem;
+    text-align: center;
+    background: $footerColor;
+
+    .access__heading {
+        font-size: $largeText;
+    }
+
+    .access__btn {
+        margin-top: 2rem;
+        border: 1px solid #fff;
+        background: none;
+        padding: 1em;
+        transition: .2s;
+
+        &:hover {
+            background: $btnColor;
+        }
+    }
+}

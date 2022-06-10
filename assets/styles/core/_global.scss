@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $primaryColor;
+    font-family: 'Manrope', Verdana, Geneva, Tahoma, sans-serif;
+    color: $primaryFontColor;
+
+    main {
+        margin: 0 6rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 90%;
+
+        main {
+            margin: 0 4rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        font-size: 75%;
+
+        main {
+            margin: 0 2rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        font-size: 70%;
+    }
+}
+
+.gradient-text {
+    background: $fontGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

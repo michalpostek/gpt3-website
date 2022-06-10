@@ -1,0 +1,55 @@
+.features {
+    @include flexbox(row, normal, start);
+    padding-top: 4rem;
+
+    .features__heading-wrapper {
+        margin-right: 1rem;
+        flex: 1;
+
+        .features__heading {
+            font-size: $largeText;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .features__content {
+        flex: 1.2;
+
+        .feature {
+            margin: 0 0 3rem 0;
+            @include flexbox(row, normal, space-between);
+
+            .feature__title {
+                flex: 1;
+
+                &::before {
+                    top: -10px;
+                }
+            }
+
+            .feature__body {
+                flex: 2;
+                font-size: $xSmallText;
+                padding-left: 5rem;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+
+        .features__heading-wrapper {
+            margin: 0;
+
+            .features__heading {
+                margin: 1rem 0;
+            }
+        }
+
+        .features__content {
+            .feature {
+                margin: 1rem 0 0 0;
+            }
+        }
+    }
+}

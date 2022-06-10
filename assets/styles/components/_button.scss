@@ -1,0 +1,42 @@
+.btn {
+    color: $primaryFontColor;
+    font-size: $smallText;
+    font-weight: 200;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn--primary {
+    background-color: $btnColor;
+    position: relative;
+    padding: 0.5em 2em;
+
+    &:hover {
+        &::after {
+            opacity: 0.1;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+        transition: .1s;
+    }
+}
+
+.btn--secondary {
+    background: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

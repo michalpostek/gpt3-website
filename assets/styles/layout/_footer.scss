@@ -1,0 +1,35 @@
+.footer {
+    background: $footerColor;
+    padding: 2rem 1rem;
+
+    .footer__content {
+        @include flexbox(row, normal, center);
+
+        .footer__content__links-wrapper {
+            margin: 0 4vw;
+
+            .footer__links__heading {
+                font-size: $smallText;
+            }
+
+            .footer__links {
+                list-style-type: none;
+                margin: 2rem 0;
+
+                .footer__link-item {
+                    margin: 1rem 0;
+                    font-size: $xSmallText;
+
+                    .footer__link {
+                        text-decoration: none;
+                        color: $secondaryFontColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyrights {
+        text-align: center;
+    }
+}

@@ -1,0 +1,58 @@
+.gpt3 {
+    padding-top: 2rem;
+
+    .gpt3__content {
+        background-color: $secondaryColor;
+        padding: 4rem;
+
+        .feature {
+            flex: 1;
+        }
+    
+        .gpt3__heading-wrapper {
+            margin: 6rem 0;
+            @include flexbox(row, normal, space-between);
+    
+            .gpt3__heading {
+                font-size: $largeText;
+            }
+    
+            .gpt3__description {
+                font-size: $xSmallText;
+            }
+        }
+    
+        .features__wrapper {
+            @include flexbox(row, stretch, start);
+            flex-wrap: wrap;
+    
+            .feature {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .gpt3__content {
+            padding: 1rem;
+
+            .gpt3__heading-wrapper {
+                margin: 2rem 0;
+
+                .gpt3__heading {
+                    margin-right: 1rem;
+                }
+            }
+    
+            .features__heading {
+                margin: 3rem 0;
+            }
+    
+            .features__wrapper {
+                .feature {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

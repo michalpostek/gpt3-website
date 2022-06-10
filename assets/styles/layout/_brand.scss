@@ -1,0 +1,13 @@
+.brand {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 2rem 0;
+
+    .brand__item {
+        margin: 1rem 1.5rem;
+    }
+}

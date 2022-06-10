@@ -1,0 +1,38 @@
+.possibility {
+    @include flexbox;
+    padding-top: 4rem;
+
+    .possibility__illustration {
+        flex: 1;
+        margin: 0 3vw;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .possibility__content {
+        flex: 1.3;
+        margin: 0 3vw;
+
+        .possibility__content__heading {
+            font-size: $xLargeText;
+        }
+
+        .possibility__content__description {
+            font-size: $smallText;
+            line-height: 175%;
+            color: $secondaryFontColor;
+            margin: 1rem 0;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+
+        .possibility__content {
+            margin: 2rem 0;
+        }
+    }
+}

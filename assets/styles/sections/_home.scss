@@ -1,0 +1,70 @@
+.home {
+    @include flexbox;
+
+    padding-top: 6rem;
+
+    .home__content {
+        margin-right: 2rem;
+        flex: 1;
+
+        .home__content__title {
+            font-weight: 800;
+            font-size: $xLargeText;
+        }
+
+        .home__content__description {
+            color: $secondaryFontColor;
+            margin: 2rem 0;
+            font-size: $smallText;
+        }
+
+        .home__content__form {
+            @include flexbox(row, stretch, start);
+
+            input {
+                background-color: #052D56;
+                color: $secondaryFontColor;
+                border: none;
+                border-radius: 6px 0 0 6px;
+                flex: 1;
+                font-size: $smallText;
+                padding: 1.5rem;
+            }
+
+            button {
+                border-radius: 0 6px 6px 0;
+            }
+        }
+
+        .home__content__signup {
+            margin: 2rem 0;
+            @include flexbox(row, center, start);
+
+            .signup__image {
+                height: 2.4em;
+            }
+
+            .signup__caption {
+                font-size: $xSmallText;
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    .home__illustration {
+        flex: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column-reverse;
+
+        .home__content {
+            margin: 0;
+        }
+    }
+}
