@@ -9,13 +9,6 @@
 
     .access__btn {
         margin-top: 2rem;
-        border: 1px solid #fff;
-        background: none;
         padding: 1em;
-        transition: .2s;
-
-        &:hover {
-            background: $btnColor;
-        }
     }
 }

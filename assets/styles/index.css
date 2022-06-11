@@ -126,6 +126,10 @@ body main {
   font-weight: 400;
 }
 
+.nav .nav__login .login__btn.btn--primary {
+  padding: 0.8em 2em;
+}
+
 .nav .nav__dropdown-menu-toggler {
   position: relative;
   display: none;
@@ -204,8 +208,20 @@ body main {
 }
 
 .nav .nav__dropdown-menu .nav__dropdown-menu__links .nav__dropdown-menu__link-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 1.5rem 0;
-  text-align: center;
 }
 
 .nav .nav__dropdown-menu .nav__dropdown-menu__links .nav__dropdown-menu__link-item .nav__dropdown-menu__link {
@@ -218,14 +234,19 @@ body main {
   text-decoration: underline;
 }
 
+.nav .nav__dropdown-menu .nav__dropdown-menu__links .nav__dropdown-menu__link-item .nav__dropdown-menu__link.login-link {
+  color: #b3cfeb;
+  font-weight: 500;
+}
+
 .nav .nav__dropdown-menu.hidden {
   display: none;
 }
 
 .nav.nav--scrolled {
   background-color: rgba(0, 0, 0, 0.85);
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -296,15 +317,7 @@ body main {
 
 .access .access__btn {
   margin-top: 2rem;
-  border: 1px solid #fff;
-  background: none;
   padding: 1em;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.access .access__btn:hover {
-  background: #FF4820;
 }
 
 .footer {
@@ -368,8 +381,8 @@ body main {
 
 .btn--primary {
   background-color: #FF4820;
+  border: 1px solid #FF4820;
   position: relative;
-  padding: 0.5em 2em;
 }
 
 .btn--primary:hover::after {
@@ -391,9 +404,20 @@ body main {
 
 .btn--secondary {
   background: none;
+  border: 1px solid #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .btn--secondary:hover {
+  background: #FF4820;
+}
+
+.btn--link {
+  background: none;
+}
+
+.btn--link:hover {
   text-decoration: underline;
 }
 
@@ -867,6 +891,7 @@ body main {
 
 .home .home__content .home__content__form button {
   border-radius: 0 6px 6px 0;
+  padding: 0 1.6em;
 }
 
 .home .home__content .home__content__signup {

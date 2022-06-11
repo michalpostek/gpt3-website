@@ -47,6 +47,10 @@
             margin-left: 1vw;
             font-size: $xSmallText;
             font-weight: 400;
+
+            &.btn--primary {
+                padding: 0.8em 2em;
+            }
         }
     }
 
@@ -123,8 +127,8 @@
             list-style-type: none;
 
             .nav__dropdown-menu__link-item {
+                @include flexbox;
                 margin: 1.5rem 0;
-                text-align: center;
 
                 .nav__dropdown-menu__link {
                     color: $primaryFontColor;
@@ -133,6 +137,11 @@
 
                     &:hover {
                         text-decoration: underline;
+                    }
+
+                    &.login-link {
+                        color: $secondaryFontColor;
+                        font-weight: 500;
                     }
                 }
             }
@@ -145,8 +154,8 @@
 
     &.nav--scrolled {
         background-color: rgba(0, 0, 0, 0.85);
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     @media (max-width: 1024px) {

@@ -11,8 +11,8 @@
 
 .btn--primary {
     background-color: $btnColor;
+    border: 1px solid $btnColor;
     position: relative;
-    padding: 0.5em 2em;
 
     &:hover {
         &::after {
@@ -34,6 +34,16 @@
 }
 
 .btn--secondary {
+    background: none;
+    border: 1px solid #fff;
+    transition: .2s;
+
+    &:hover {
+        background: $btnColor;
+    }
+}
+
+.btn--link {
     background: none;
     
     &:hover {
