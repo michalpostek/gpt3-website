@@ -31,8 +31,21 @@
     @media screen and (max-width: 1024px) {
         flex-direction: column;
 
+        .possibility__illustration {
+            width: 70%;
+        }
+
         .possibility__content {
+            text-align: center;
             margin: 2rem 0;
+
+            .possibility__content__heading {
+                font-size: $largeText;
+            }
+
+            .possibility__content__description {
+                font-size: $xSmallText;
+            }
         }
     }
 }

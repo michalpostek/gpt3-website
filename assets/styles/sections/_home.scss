@@ -76,9 +76,19 @@
 
     @media screen and (max-width: 1024px) {
         flex-direction: column-reverse;
+        padding-top: 4rem;
 
         .home__content {
             margin: 0;
+            text-align: center;
+
+            .home__content__title {
+                font-size: $largeText;
+            }
+        }
+
+        .home__illustration {
+            width: 75%;
         }
     }
 }

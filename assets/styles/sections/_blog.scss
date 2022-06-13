@@ -51,15 +51,30 @@
         }
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1024px) {
+        .blog__heading {
+            font-size: $largeText;
+        }
+
         .blog__content {
             grid-template-columns: repeat(2, 1fr);
+
+            .post {
+                .post__content {
+                    padding: 0.5rem;
+
+                    .post__content__title {
+                        font-size: $xSmallText;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
         }
     }
 
-    @media screen and (max-width: 500px) {
-        .blog__content {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
+    // @media screen and (max-width: 500px) {
+    //     .blog__content {
+    //         grid-template-columns: repeat(1, 1fr);
+    //     }
+    // }
 }

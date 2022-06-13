@@ -21,6 +21,7 @@
         .gpt3__heading-wrapper {
             margin: 6rem 0;
             @include flexbox(row, normal, space-between);
+            gap: 2rem;
     
             .gpt3__heading {
                 font-size: $largeText;
@@ -46,7 +47,7 @@
                 margin: 2rem 0;
 
                 .gpt3__heading {
-                    margin-right: 1rem;
+                    font-size: $mediumText;
                 }
             }
     

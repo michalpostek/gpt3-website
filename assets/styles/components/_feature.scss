@@ -20,4 +20,11 @@
         font-size: $xSmallText;
         color: $secondaryFontColor;
     }
+
+    @media screen and (max-width: 768px) {
+        .feature__title {
+            font-size: $smallText;
+            margin: 1rem 0 2rem;
+        }
+    }
 }
