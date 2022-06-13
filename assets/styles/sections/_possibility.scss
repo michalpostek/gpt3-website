@@ -15,17 +15,6 @@
     .possibility__content {
         flex: 1.3;
         margin: 0 3vw;
-
-        .possibility__content__heading {
-            font-size: $xLargeText;
-        }
-
-        .possibility__content__description {
-            font-size: $smallText;
-            line-height: 175%;
-            color: $secondaryFontColor;
-            margin: 1rem 0;
-        }
     }
 
     @media screen and (max-width: 1024px) {
@@ -38,14 +27,6 @@
         .possibility__content {
             text-align: center;
             margin: 2rem 0;
-
-            .possibility__content__heading {
-                font-size: $largeText;
-            }
-
-            .possibility__content__description {
-                font-size: $xSmallText;
-            }
         }
     }
 }

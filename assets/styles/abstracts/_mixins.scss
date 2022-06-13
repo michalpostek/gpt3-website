@@ -5,7 +5,7 @@
     justify-content: $justify;
 }
 
-@mixin blur($top: 0, $right: 0, $bottom: 0, $left: 0, $width: 40, $bg: #002853) {
+@mixin blur ($top: 0, $right: 0, $bottom: 0, $left: 0, $width: 40, $bg: #002853) {
     content: '';
     position: absolute;
     top: $top;

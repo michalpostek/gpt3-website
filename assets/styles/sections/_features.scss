@@ -10,11 +10,6 @@
     .features__heading-wrapper {
         margin-right: 1rem;
         flex: 1;
-
-        .features__heading {
-            font-size: $largeText;
-            margin-bottom: 1rem;
-        }
     }
 
     .features__content {
@@ -45,11 +40,6 @@
 
         .features__heading-wrapper {
             margin: 0;
-
-            .features__heading {
-                margin: 1rem 0;
-                font-size: $mediumText;
-            }
         }
 
         .features__content {

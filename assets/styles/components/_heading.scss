@@ -1,0 +1,23 @@
+.heading {
+    background: $fontGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem 0;
+}
+
+.heading--big {
+    font-size: $xLargeText;
+
+    @media (max-width: 768px) {
+        font-size: $largeText;
+    }
+}
+
+.heading--small {
+    font-size: $largeText;
+
+    @media (max-width: 768px) {
+        font-size: $mediumText;
+    }
+}

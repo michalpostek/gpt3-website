@@ -7,17 +7,6 @@
         margin-right: 2rem;
         flex: 1;
 
-        .home__content__title {
-            font-weight: 800;
-            font-size: $xLargeText;
-        }
-
-        .home__content__description {
-            color: $secondaryFontColor;
-            margin: 2rem 0;
-            font-size: $smallText;
-        }
-
         .home__content__form {
             @include flexbox(row, stretch, start);
 
@@ -81,10 +70,6 @@
         .home__content {
             margin: 0;
             text-align: center;
-
-            .home__content__title {
-                font-size: $largeText;
-            }
         }
 
         .home__illustration {

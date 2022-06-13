@@ -1,0 +1,16 @@
+.description {
+    color: $secondaryFontColor;
+}
+
+.description--big {
+    font-size: $smallText;
+    margin: 2rem 0;
+
+    @media (max-width: 768px) {
+        font-size: $xSmallText;
+    }
+}
+
+.description--small {
+    font-size: $xSmallText;
+}

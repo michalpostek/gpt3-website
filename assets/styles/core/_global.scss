@@ -31,10 +31,3 @@ body {
         font-size: 70%;
     }
 }
-
-.gradient-text {
-    background: $fontGradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}

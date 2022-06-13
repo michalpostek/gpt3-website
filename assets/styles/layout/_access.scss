@@ -3,12 +3,7 @@
     text-align: center;
     background: $footerColor;
 
-    .access__heading {
-        font-size: $largeText;
-    }
-
-    .access__btn {
-        margin-top: 2rem;
-        padding: 1em;
+    button {
+        margin-top: 2em;
     }
 }

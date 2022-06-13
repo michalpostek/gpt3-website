@@ -1,11 +1,6 @@
 .blog {
     padding: 2rem 0 4rem 0;
 
-    .blog__heading {
-        font-size: $xLargeText;
-        margin: 2rem 0;
-    }
-
     .blog__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -52,10 +47,6 @@
     }
 
     @media screen and (max-width: 1024px) {
-        .blog__heading {
-            font-size: $largeText;
-        }
-
         .blog__content {
             grid-template-columns: repeat(2, 1fr);
 
