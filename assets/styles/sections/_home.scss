@@ -1,7 +1,7 @@
 .home {
     @include flexbox;
-
     padding-top: 6rem;
+    position: relative;
 
     .home__content {
         margin-right: 2rem;
@@ -54,11 +54,24 @@
 
     .home__illustration {
         flex: 1;
+        position: relative;
+
+        .blur {
+            @include blur(100%, 0, 20);
+        }
 
         img {
             width: 100%;
             height: 100%;
         }
+
+        &::before {
+            @include blur(unset, 0, 0, unset, 20, #002853);
+        }
+    }
+
+    &::before {
+        @include blur(-10%, unset, unset, -10%, 40, #002853);
     }
 
     @media screen and (max-width: 1024px) {

@@ -1,6 +1,11 @@
 .features {
     @include flexbox(row, normal, start);
     padding-top: 4rem;
+    position: relative;
+
+    &::before {
+        @include blur(0, unset, unset, 0, 25, #07325F);
+    }
 
     .features__heading-wrapper {
         margin-right: 1rem;

@@ -1,5 +1,14 @@
 .gpt3 {
     padding-top: 2rem;
+    position: relative;
+
+    &::before {
+        @include blur(0, unset, unset, 0, 15, #1B78DE);
+    }
+
+    &::after {
+        @include blur(unset, 0, 0, unset, 15, #1B78DE);
+    }
 
     .gpt3__content {
         background-color: $secondaryColor;
@@ -24,11 +33,8 @@
     
         .features__wrapper {
             @include flexbox(row, stretch, start);
+            gap: 2rem;
             flex-wrap: wrap;
-    
-            .feature {
-                margin-right: 2rem;
-            }
         }
     }
 

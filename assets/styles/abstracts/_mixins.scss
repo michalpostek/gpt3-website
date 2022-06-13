@@ -4,3 +4,17 @@
     align-items: $align;
     justify-content: $justify;
 }
+
+@mixin blur($top: 0, $right: 0, $bottom: 0, $left: 0, $width: 40, $bg: #002853) {
+    content: '';
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    width: $width + vw;
+    height: $width + vw;
+    background: $bg;
+    filter: blur(($width / 2) + vw);
+    z-index: -1;
+}
