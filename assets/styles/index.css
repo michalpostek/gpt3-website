@@ -304,7 +304,13 @@ body main {
 }
 
 .access button {
-  margin-top: 2em;
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .access {
+    padding: 4rem 1rem;
+  }
 }
 
 .footer {
@@ -868,7 +874,7 @@ body main {
     padding: 1rem;
   }
   .gpt3 .gpt3__content .heading {
-    margin: 2rem;
+    margin: 2rem 0;
   }
   .gpt3 .gpt3__content .features__wrapper .feature {
     margin-top: 2rem;
